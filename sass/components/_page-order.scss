@@ -1,0 +1,215 @@
+.order {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  // padding: 200px 0;
+  padding: 180px 0;
+  text-align: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
+  url('../images/hat.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+.order__title {
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fz-white-color);
+  // width: 696px;
+  // font-size: 44px;
+  // line-height: 1.36;
+  
+}
+
+.order__btn {
+  margin-top: 30px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: var(--fz-white-color);
+
+  // width: 216px;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  z-index: 3;
+  transition: opacity var(--base-transition), visibility var(--base-transition);
+}
+.modal{
+  position: absolute;
+  width: 450px;
+  // width: 528px;
+  top: 50%;
+  left: 50%;
+  background-color: var(--fz-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: var(--fz-black-color);
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--fz-white-color);
+  border-radius: 50%;
+  &:hover,
+  &:focus{
+  fill: var(--hover-color);
+}
+}
+.close-wrap{
+  width: 100%;
+  height: auto;
+  fill: inherit;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: var(--ls-base);
+  color: var(--fz-dark-color);
+  margin-bottom: 12px;
+}
+.form__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--fz-grey-color);
+  display: flex;
+}
+.input-wrap {
+  position: relative;
+  fill: var(--fz-dark-color);
+  transition: fill var(--base-transition);
+  &:hover,
+  &:focus {
+    fill: var(--hover-color);
+  }
+}
+
+.order__form .icon{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  fill: inherit;
+  }
+.form__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  border-radius: 4px;
+  padding-left: 42px;
+  margin-top: 4px;
+  transition: border-color var(--base-transition);
+  .input-wrap:hover &,
+  .input-wrap:focus &{
+  border-color: var(--hover-color);
+}
+}
+.order .input-wrap:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.form__text {
+  height: 130px;
+  resize: none;
+  padding: 12px 16px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+  // margin-top: 25px;
+}
+.checkbox-container{
+  position: relative;
+  width: 16px;
+  height: 15px;
+  fill: var(--fz-white-color);
+}
+.form__checkbox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 7;
+}
+.checkbox-wrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--fz-dark-color);
+  border-radius: 3px;
+  transition: background-color var(--base-transition);
+  .form__checkbox:checked ~ &{
+    background-color: var(--hover-color);
+  }
+}
+.icon-Vector{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  fill: inherit ;
+}
+
+.checkbox__text {
+  font-size: 12px;
+line-height: 1.16;
+  letter-spacing: var(--ls-base);
+  color: var(--fz-grey-color);
+  margin-left: 8px;
+  // font-size: var(--fs-base);
+  // line-height: 1.71;
+}
+
+.checkbox__text-blue {
+  color: var(--hover-color);
+}
+
+.form__btn {
+  width: 200px;
+}

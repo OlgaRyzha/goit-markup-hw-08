@@ -1,0 +1,83 @@
+.section-team {
+  background: 100%;
+  background-color: #F5F4FA;
+}
+.team__cards{
+  display: block;
+}
+.team__title{
+  font-size: 28px;
+line-height: 1.18;
+margin-bottom: 30px;
+}
+.team__card {
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  background-color: var(--fz-white-color);
+& + &{
+  margin-top: 30px;
+}
+  // width: 270px;
+}
+
+.team__img {
+  width: 100%;
+  height: 460px;
+  // height: 260px;
+}
+
+.team__wrap {
+  padding: 30px 0;
+}
+
+.team__card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: var(--ls-base);
+  margin-bottom: 10px;
+}
+
+.team__text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: var(--ls-base);
+  color: var(--fz-grey-color);
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: fill var(--base-transition), background-color var(--base-transition), border var(--base-transition), box-shadow var(--base-transition);
+  fill: #AFB1B8;
+
+  &:hover,
+  &:focus {
+    fill: var(--fz-white-color);
+    background: var(--hover-color);
+    border: 1px solid none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+  width: 20px;
+  height: 20px;
+  fill: inherit;
+}
