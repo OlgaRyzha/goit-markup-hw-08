@@ -1,13 +1,19 @@
 .menu {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // justify-content: center;
+  width: 326px;
+  margin-bottom: 40px;
+  // margin-bottom: 50px;
 }
 
 .menu__item+.menu__item {
   margin-left: 8px;
 }
-
+.menu__item:nth-child(4),
+.menu__item:nth-child(5){
+  margin-top: 15px;
+}
 .menu__link {
   display: inline-block;
   text-align: center;
@@ -34,7 +40,6 @@
   border-radius: 4px;
   background-color: var(--hover-color);
   color: var(--fz-white-color);
-  padding: 6px 25px;
 }
 .portfolio__cards {
   display: flex;
@@ -42,10 +47,11 @@
   gap: 30px;
 }
 .portfolio__card {
-  flex-basis: calc((100% - 30px*2) / 3 );
+  width: 100%;
+  // flex-basis: calc((100% - 30px*2) / 3 );
   background-color: var(--fz-white-color);
   transition: box-shadow var(--base-transition);
-  width: 370px;
+  // width: 370px;
   height: 404px;
 &:hover,
 &:focus{
@@ -89,6 +95,7 @@
 
 .portfolio__img {
   width: 100%;
+  height: 294px;
 }
 .portfolio__wrap {
   padding: 20px 24px ;
