@@ -338,7 +338,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   body {
-    width: 1600px;
+    min-width: 1200px;
   }
 }
 
@@ -648,6 +648,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: url("../images/hat@2x.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .order {
