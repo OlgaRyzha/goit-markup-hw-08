@@ -651,7 +651,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
-    background-image: url("../images/hat@2x.jpg");
+    background-image: url("../images/hat.jpg");
   }
 }
 @media screen and (min-width: 768px) {
