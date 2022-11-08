@@ -1,15 +1,31 @@
 .cards {
   display: block;
-  // align-items: flex-start;
-  // gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 
-// .card {
-//   width: 270px;
+.card {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2 )  ;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 
-// }
+}
 .card + .card{
   margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 .icon-wrapper{
   display: flex;
@@ -28,6 +44,9 @@
   letter-spacing: var(--ls-base);
   text-transform: uppercase;
   margin-top: 30px;
+  @media screen and (min-width: 768px) {
+   text-align: left;
+  }
 }
 
 .cards__text {
@@ -37,6 +56,7 @@
   line-height: 1.7;
   letter-spacing: var(--ls-base);
   color: var(--fz-grey-color);
-
-  // width: 270px;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }

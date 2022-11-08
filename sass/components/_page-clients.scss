@@ -4,6 +4,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (min-width: 1200px) {
+   flex-wrap: nowrap;
+  }
 }
 .clients__card {
   width: 50%;
@@ -11,7 +14,13 @@
   justify-content: center;
   width: 210px;
   height: 92px;
-  // width: 170px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 3 ) ;
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .clients__card a{

@@ -32,22 +32,21 @@
           </ul>
         </div>
       </nav>
-    <ul class="nav__list contacts">
-      <li class="nav__item">
-        <a class="nav__link nav__email" href="mailto:info@devstudio.com"><svg class="icon icon-envelope" width="16" height="12">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
-          </svg>info@devstudio.com</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link nav__tel" href="tel:+380961111111"> <svg class="icon icon-smartphone" width="10"
-            height="16">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
-          </svg>+38 096 111 11 11</a>
-      </li>
-    </ul>
-      <button class="menu-toggle js-open-menu" type="button"
-        aria-expanded="false"
-        aria-controls="mobile-menu">
+      <ul class="nav__list contacts">
+        <li class="nav__item">
+          <a class="nav__link nav__email" href="mailto:info@devstudio.com"><svg class="icon icon-envelope" width="16"
+              height="12">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li class="nav__item tel-item">
+          <a class="nav__link nav__tel" href="tel:+380961111111"> <svg class="icon icon-smartphone" width="10"
+              height="16">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+      <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="icon icon-menu_24px" width="24" height="16">
           <use href="./images/icons.svg/symbol-defs.svg#icon-menu_24px"></use>
         </svg>
@@ -64,126 +63,134 @@
           <li><a href="#" class="mobile-link">Контакти</a></li>
         </ul>
         <div class="test">
-        <ul class="mobile-menu mobile-contacts">
-          <li><a class="mobile-link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-          <li><a class="mobile-link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-        <ul class="mobile-socials">
-          <li><a href="#" class="mobile-link socials-link">Instagram</a></li>
-          <li><a href="#" class="mobile-link socials-link">Twitter</a></li>
-          <li><a href="#" class="mobile-link socials-link">Facebook</a></li>
-          <li><a href="#" class="mobile-link socials-link">LinkedIn</a></li>
-        </ul>
-</div>
+          <ul class="mobile-menu mobile-contacts">
+            <li><a class="mobile-link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="mobile-link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-socials">
+            <li><a href="#" class="mobile-link socials-link">Instagram</a></li>
+            <li><a href="#" class="mobile-link socials-link">Twitter</a></li>
+            <li><a href="#" class="mobile-link socials-link">Facebook</a></li>
+            <li><a href="#" class="mobile-link socials-link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
-  </div>
+    </div>
   </header>
   <main class="main">
     <section class="order">
       <h1 class="order__title">Ефективні рішення для вашого бізнесу</h1>
       <button data-modal-open class="order__btn" type="button">Замовити послугу</button>
-      <div data-modal class="overlay is-hidden" >
-      <div class="modal">
-        <div class="close-wrap">
-          <button data-modal-close class="btn-close" type="button">
-            <svg class="icon icon-close" width="11" height="11">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-        </div>
-        <form class="order__form" action="index.html" name="f1" method="get">
-          <h3 class="form__title">Залиште свої дані, ми вам передзвонимо</h3>
-          <label class="form__label" for="name">Ім'я</label>
-          <div class="input-wrap">
-          <input class="form__input name" type="text" name="name" id="name"  required>
-          <svg class="icon icon-name" width="12" height="12">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-name"></use></svg></div>
-          <label class="form__label" for="tel">Телефон</label>
-          <div class="input-wrap">
-          <input class="form__input tel" type='tel' name="tel" id="tel" required>
-          <svg class="icon icon-tel"  width="12" height="12">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-tel"></use>
-          </svg></div>
-          <label class="form__label" for="email">Пошта</label>
-          <div class="input-wrap">
-          <input class="form__input email" type="email" name="email" id="email" required>
-          <svg class="icon icon-email"  width="12" height="12">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-email"></use>
-          </svg></div>
-          <div class="input-wrap">
-          <label class="form__label" for="form-text">Коментар</label>
-          <textarea class="form__input form__text" id="form-text" placeholder="Введіть текст"></textarea>
-        </div>
-        </form>
+      <div data-modal class="overlay is-hidden">
+        <div class="modal">
+          <div class="close-wrap">
+            <button data-modal-close class="btn-close" type="button">
+              <svg class="icon icon-close" width="11" height="11">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <form class="order__form" action="index.html" name="f1" method="get">
+            <h3 class="form__title">Залиште свої дані, ми вам передзвонимо</h3>
+            <label class="form__label" for="name">Ім'я</label>
+            <div class="input-wrap">
+              <input class="form__input name" type="text" name="name" id="name" required>
+              <svg class="icon icon-name" width="12" height="12">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-name"></use>
+              </svg>
+            </div>
+            <label class="form__label" for="tel">Телефон</label>
+            <div class="input-wrap">
+              <input class="form__input tel" type='tel' name="tel" id="tel" required>
+              <svg class="icon icon-tel" width="12" height="12">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-tel"></use>
+              </svg>
+            </div>
+            <label class="form__label" for="email">Пошта</label>
+            <div class="input-wrap">
+              <input class="form__input email" type="email" name="email" id="email" required>
+              <svg class="icon icon-email" width="12" height="12">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="input-wrap">
+              <label class="form__label" for="form-text">Коментар</label>
+              <textarea class="form__input form__text" id="form-text" placeholder="Введіть текст"></textarea>
+            </div>
+          </form>
           <div class="checkbox-wrapper">
             <div class="checkbox-container">
-            <label class="checkbox-label" for="checkbox"></label>
-            <input class="form__checkbox" type="checkbox" name="checkbox" id="checkbox" required>
-            <div class="checkbox-wrap">
-            <svg class="icon icon-Vector">
-              <use href="./images/icons.svg/symbol-defs.svg#icon-Vector"></use>
-            </svg>
-          </div>
-        </div>
-            <p class="checkbox__text">Погоджуюся з розсилкою та приймаю <a class="checkbox__text-blue"
-                href="#">Умови договору</a> </p>
+              <label class="checkbox-label" for="checkbox"></label>
+              <input class="form__checkbox" type="checkbox" name="checkbox" id="checkbox" required>
+              <div class="checkbox-wrap">
+                <svg class="icon icon-Vector">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-Vector"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="checkbox__text">Погоджуюся з розсилкою та приймаю <a class="checkbox__text-blue" href="#">Умови
+                договору</a> </p>
           </div>
           <button class="form__btn order__btn" type="submit">Відправити</button>
-      
-        
+
+
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-      <h2 hidden>Benefits</h2>
-      <ul class="cards display-base-style">
-        <li class="card">
-          <div class="icon-wrapper">
-          <svg class="icon icon-Vector_1" width="70" height="70">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_1"></use>
-          </svg></div>
-          <h3 class="cards__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p class="cards__text">
-            Ідейні міркування, і навіть початок повсякденної роботи з
-            формування позиції.
-          </p>
-        </li>
-        <li class="card">
-          <div class="icon-wrapper">
-          <svg class="icon icon-Vector_2"  width="70" height="70">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_2"></use>
-          </svg></div>
-          <h3 class="cards__title">ПУНКТУАЛЬНІСТЬ</h3>
-          <p class="cards__text">
-            Завдання організації, особливо рамки і місце навчання кадрів
-            тягне у себе.
-          </p>
-        </li>
-        <li class="card">
-          <div class="icon-wrapper">
-          <svg class="icon icon-Vector_3" width="70" height="70">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_3" ></use>
-          </svg></div>
-          <h3 class="cards__title">ПЛАНУВАННЯ</h3>
-          <p class="cards__text">
-            Так само консультація з широким активом значною мірою зумовлює.
-          </p>
-        </li>
-        <li class="card">
-          <div class="icon-wrapper">
-          <svg class="icon icon-Vector_4"  width="70" height="70">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_4"></use>
-          </svg></div>
-          <h3 class="cards__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p class="cards__text">
-            Значимість цих проблем настільки очевидна, що реалізація
-            планових завдань.
-          </p>
-        </li>
-      </ul>
-    </div>
+        <h2 hidden>Benefits</h2>
+        <ul class="cards display-base-style">
+          <li class="card">
+            <div class="icon-wrapper">
+              <svg class="icon icon-Vector_1" width="70" height="70">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_1"></use>
+              </svg>
+            </div>
+            <h3 class="cards__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="cards__text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="card">
+            <div class="icon-wrapper">
+              <svg class="icon icon-Vector_2" width="70" height="70">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_2"></use>
+              </svg>
+            </div>
+            <h3 class="cards__title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="cards__text">
+              Завдання організації, особливо рамки і місце навчання кадрів
+              тягне у себе.
+            </p>
+          </li>
+          <li class="card">
+            <div class="icon-wrapper">
+              <svg class="icon icon-Vector_3" width="70" height="70">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_3"></use>
+              </svg>
+            </div>
+            <h3 class="cards__title">ПЛАНУВАННЯ</h3>
+            <p class="cards__text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="card">
+            <div class="icon-wrapper">
+              <svg class="icon icon-Vector_4" width="70" height="70">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Vector_4"></use>
+              </svg>
+            </div>
+            <h3 class="cards__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="cards__text">
+              Значимість цих проблем настільки очевидна, що реалізація
+              планових завдань.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="section offers">
@@ -191,25 +198,25 @@
         <h2 class="offers__title">Чим ми займаємося</h2>
         <ul class="offers__imgs display-base-style">
           <li class="offers__card">
-            <img class="offers__img" src="./images/box_1.jpg" alt="box_1" />
+            <img class="offers__img" src="./images/box_1.jpg" srcset="./images/box_1.jpg 1x, ./images/box_1@2x.jpg 2x" alt="box_1" />
             <div class="offers__box">
-            <p class="offer__title">Десктопні додатки</p>
-          </div>
+              <p class="offer__title">Десктопні додатки</p>
+            </div>
           </li>
           <li class="offers__card">
-            <img class="offers__img" src="./images/box_2.jpg" alt="box_2" />
+            <img class="offers__img" src="./images/box_2.jpg" srcset="./images/box_2.jpg 1x, ./images/box_2@2x.jpg 2x" alt="box_2" />
             <div class="offers__box">
-            <p class="offer__title">Мобільні додатки</p>
-          </div>
+              <p class="offer__title">Мобільні додатки</p>
+            </div>
           </li>
           <li class="offers__card">
-            <img class="offers__img" src="./images/box_3.jpg" alt="box_3" />
+            <img class="offers__img" src="./images/box_3.jpg" srcset="./images/box_3.jpg 1x, ./images/box_3@2x.jpg 2x" alt="box_3" />
             <div class="offers__box">
-            <p class="offer__title">Дизайнерські рішення</p>
-          </div>
+              <p class="offer__title">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
-    </div>
+      </div>
     </section>
 
     <section class="section section-team ">
@@ -217,7 +224,7 @@
         <h2 class="team__title offers__title">Наша команда</h2>
         <ul class="team__cards display-base-style">
           <li class="team__card">
-            <img class="team__img" src="./images/comands_1.jpg" alt="comands_1" />
+            <img class="team__img" src="./images/comands_1.jpg" srcset="./images/comands_1.jpg 1x, ./images/comands_1@2x.jpg 2x" alt="comands_1" />
             <div class="team__wrap">
               <h3 class="team__card-title">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
@@ -238,7 +245,7 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__img" src="./images/comands_2.jpg" alt="comands_2" />
+            <img class="team__img" src="./images/comands_2.jpg" srcset="./images/comands_2.jpg 1x, ./images/comands_2@2x.jpg 2x" alt="comands_2" />
             <div class="team__wrap">
               <h3 class="team__card-title">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
@@ -259,7 +266,7 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__img" src="./images/comands_3.jpg" alt="comands_3" />
+            <img class="team__img" src="./images/comands_3.jpg" srcset="./images/comands_3.jpg 1x, ./images/comands_3@2x.jpg 2x" alt="comands_3" />
             <div class="team__wrap">
               <h3 class="team__card-title">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
@@ -280,7 +287,7 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__img" src="./images/comands_4.jpg" alt="comands_4" />
+            <img class="team__img" src="./images/comands_4.jpg" srcset="./images/comands_4.jpg 1x, ./images/comands_4@2x.jpg 2x"alt="comands_4" />
             <div class="team__wrap">
               <h3 class="team__card-title">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
@@ -303,55 +310,55 @@
         </ul>
       </div>
     </section>
-   
+
     <section class="section clients">
       <div class="container">
-      <h2 class="offers__title team__title">Постійні клієнти</h2>
-      <ul class="clients__cards">
-        <li class="clients__card"> 
-          <a href="#">
-          <svg class="icon icon-Logo_1">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_1"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="clients__card">
-        <a href="#">
-          <svg class="icon icon-Logo_2">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_2"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="clients__card">
-        <a href="#">
-          <svg class="icon icon-Logo_3">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_3"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="clients__card">
-     <a href="#">
-      <svg class="icon icon-Logo_4">
-        <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_4"></use>
-      </svg>
-     </a>
-        </li>
-        <li class="clients__card">
-       <a href="#">
-        <svg class="icon icon-Logo_5">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_5"></use>
-        </svg>
-       </a>
-        </li>
-        <li class="clients__card">
-        <a href="#">
-          <svg class="icon icon-Logo_6">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_6"></use>
-          </svg>
-        </a>
-        </li>
-      </ul>
-    </div>
+        <h2 class="offers__title team__title">Постійні клієнти</h2>
+        <ul class="clients__cards">
+          <li class="clients__card">
+            <a href="#">
+              <svg class="icon icon-Logo_1">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__card">
+            <a href="#">
+              <svg class="icon icon-Logo_2">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__card">
+            <a href="#">
+              <svg class="icon icon-Logo_3">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__card">
+            <a href="#">
+              <svg class="icon icon-Logo_4">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__card">
+            <a href="#">
+              <svg class="icon icon-Logo_5">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients__card">
+            <a href="#">
+              <svg class="icon icon-Logo_6">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-Logo_6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
@@ -403,17 +410,17 @@
           <input class="mailing-list__email" placeholder="E-mail" type="email" name="email" id="mailing-list__email"
             required>
           <a class=" mailing-list__btn" href="#" target="_blank" rel="noopener noreferrer">Підписатися<svg
-            class="footer-icon icon-icon_send" width="24" height="24">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-icon_send"></use></svg></a>
+              class="footer-icon icon-icon_send" width="24" height="24">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-icon_send"></use>
+            </svg></a>
         </div>
       </div>
     </div>
   </footer>
-  <script defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"></script>
-<script defer src="js/mobile-menu.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

@@ -2,14 +2,25 @@
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  // padding: 200px 0;
-  padding: 180px 0;
+  padding: 118px 0;
   text-align: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)),
   url('../images/hat.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url('../images/hat@2x.jpg');
+}
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 200px 0;
+  }
 }
 
 .order__title {
@@ -20,10 +31,14 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--fz-white-color);
-  // width: 696px;
-  // font-size: 44px;
-  // line-height: 1.36;
-  
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .order__btn {
@@ -40,8 +55,9 @@
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: var(--fz-white-color);
-
-  // width: 216px;
+  @media screen and (min-width: 1200px) {
+    width: 216px;
+  }
 }
 .overlay{
   position: fixed;
@@ -57,7 +73,6 @@
 .modal{
   position: absolute;
   width: 450px;
-  // width: 528px;
   top: 50%;
   left: 50%;
   background-color: var(--fz-white-color);
@@ -67,6 +82,9 @@
   z-index: 5;
   transform: translate(-50%, -50%);
   padding: 40px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 .is-hidden{
   visibility: hidden;
@@ -157,7 +175,11 @@
   display: flex;
   align-items: flex-end;
   margin-top: 20px;
-  // margin-top: 25px;
+  @media screen and (min-width: 1200px) {
+  justify-content: center;
+  align-items: center
+  }
+ 
 }
 .checkbox-container{
   position: relative;
@@ -198,12 +220,14 @@
 
 .checkbox__text {
   font-size: 12px;
-line-height: 1.16;
+  line-height: 1.16;
   letter-spacing: var(--ls-base);
   color: var(--fz-grey-color);
   margin-left: 8px;
-  // font-size: var(--fs-base);
-  // line-height: 1.71;
+  @media screen and (min-width: 1200px) {
+    font-size: var(--fs-base);
+  line-height: 1.71;
+    }
 }
 
 .checkbox__text-blue {
