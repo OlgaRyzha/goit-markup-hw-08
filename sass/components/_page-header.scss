@@ -297,12 +297,13 @@ body {
   margin-top: 64px;
   display: flex;
 }
-
+.mobile-socials li:not(:last-child){
+  border-right: 2px solid rgba(33, 33, 33, 0.2);
+}
 .socials-link {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
-  border-right: 2px solid rgba(33, 33, 33, 0.2);
   padding: 0 10px;
 }
