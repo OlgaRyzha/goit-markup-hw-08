@@ -79,27 +79,25 @@
 .portfolio__card {
   width: 100%;
   background-color: var(--fz-white-color);
-  transition: box-shadow var(--base-transition);
   height: 404px;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
-
   @media screen and (min-width: 1200px) {
     width: 370px;
   }
 }
 
 .portfolio__card a {
+  display: block;
   width: 100%;
   height: 100%;
   text-decoration: none;
+  transition: box-shadow var(--base-transition);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .portfolio__block {
@@ -108,16 +106,13 @@
   overflow: hidden;
   width: 100%;
   height: calc(100% - 110px);
-
   @media screen and (min-width: 768px) {
     height: calc(100% - 146px);
   }
-
   @media screen and (min-width: 1200px) {
     height: calc(100% - 110px);
   }
 }
-
 .portfolio__hover {
   opacity: 0;
   position: absolute;
@@ -133,8 +128,8 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
-
-  .portfolio__card:hover & {
+  .portfolio__card a:hover &,
+  .portfolio__card a:focus & {
     transform: translateY(0);
     opacity: 1;
   }
@@ -142,7 +137,10 @@
 
 .portfolio__img {
   width: 100%;
-  height: 294px;
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
+
 }
 
 .portfolio__wrap {
