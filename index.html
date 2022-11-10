@@ -58,17 +58,17 @@
           </svg>
         </button>
         <ul class="mobile-menu">
-          <li><a href="./index.html" class="mobile-link">Студія</a></li>
+          <li><a href="./index.html" class="mobile-link mobile-link--blue">Студія</a></li>
           <li><a href="./portfolio.html" class="mobile-link">Портфоліо</a></li>
           <li><a href="#" class="mobile-link">Контакти</a></li>
         </ul>
-        <div class="test">
+        <div class="mobile-menu-wrap">
           <ul class="mobile-menu mobile-contacts">
-            <li><a class="mobile-link contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="mobile-link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="mobile-link contacts-link mobile-link--blue" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="mobile-link contacts-link contacts-link-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           </ul>
           <ul class="mobile-socials">
-            <li><a href="#" class="mobile-link socials-link">Instagram</a></li>
+            <li><a href="#" class="mobile-link socials-link socials-link--primary">Instagram</a></li>
             <li><a href="#" class="mobile-link socials-link">Twitter</a></li>
             <li><a href="#" class="mobile-link socials-link">Facebook</a></li>
             <li><a href="#" class="mobile-link socials-link">LinkedIn</a></li>
@@ -79,6 +79,7 @@
   </header>
   <main class="main">
     <section class="order">
+      <div class="container">
       <h1 class="order__title">Ефективні рішення для вашого бізнесу</h1>
       <button data-modal-open class="order__btn" type="button">Замовити послугу</button>
       <div data-modal class="overlay is-hidden">
@@ -133,7 +134,7 @@
           </div>
           <button class="form__btn order__btn" type="submit">Відправити</button>
 
-
+        </div>
         </div>
       </div>
     </section>
@@ -196,7 +197,7 @@
     <section class="section offers">
       <div class="container">
         <h2 class="offers__title">Чим ми займаємося</h2>
-        <ul class="offers__imgs display-base-style">
+        <ul class="offers__imgs">
           <li class="offers__card">
             <img class="offers__img" src="./images/box_1.jpg" alt="box_1" />
             <div class="offers__box">

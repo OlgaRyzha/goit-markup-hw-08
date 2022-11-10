@@ -5,7 +5,10 @@
    display: flex;
   }
 }
-
+.offers__imgs{
+  display: flex;
+  gap: 30px;
+}
 
 .offers__title {
   margin-bottom: 50px;
