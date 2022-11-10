@@ -528,11 +528,23 @@ body {
     height: 10px;
   }
 }
+@media (min-width: 1200px) {
+  .icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 @media (min-width: 768px) {
   .icon-smartphone {
     width: 10px;
     height: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon-smartphone {
+    width: 10px;
+    height: 16px;
   }
 }
 
