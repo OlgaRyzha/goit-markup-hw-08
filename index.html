@@ -141,7 +141,7 @@
 
     <section class="section">
       <div class="container">
-        <h2 hidden>Benefits</h2>
+        <h2 class="visually-hidden">Benefits</h2>
         <ul class="cards display-base-style">
           <li class="card">
             <div class="icon-wrapper">
@@ -199,19 +199,28 @@
         <h2 class="offers__title">Чим ми займаємося</h2>
         <ul class="offers__imgs">
           <li class="offers__card">
-            <img class="offers__img" src="./images/box_1.jpg" alt="box_1" />
+            <picture>
+              <source srcset="./images/boxes/box_1.jpg 1x, ./images/boxes_2x/box_1@2x.jpg 2x"/>             
+              <img class="team__img" src="./images/boxes/box_1.jpg" alt="comands_1" />
+            </picture>
             <div class="offers__box">
               <p class="offer__title">Десктопні додатки</p>
             </div>
           </li>
           <li class="offers__card">
-            <img class="offers__img" src="./images/box_2.jpg" alt="box_2" />
+            <picture>
+              <source srcset="./images/boxes/box_2.jpg 1x, ./images/boxes_2x/box_2@2x.jpg 2x"/>             
+              <img class="team__img" src="./images/boxes/box_2.jpg" alt="comands_2" />
+            </picture>
             <div class="offers__box">
               <p class="offer__title">Мобільні додатки</p>
             </div>
           </li>
           <li class="offers__card">
-            <img class="offers__img" src="./images/box_3.jpg" alt="box_3" />
+            <picture>
+              <source srcset="./images/boxes/box_3.jpg 1x, ./images/boxes_2x/box_3@2x.jpg 2x"/>             
+              <img class="team__img" src="./images/boxes/box_3.jpg" alt="comands_3" />
+            </picture>
             <div class="offers__box">
               <p class="offer__title">Дизайнерські рішення</p>
             </div>
@@ -226,10 +235,10 @@
         <ul class="team__cards display-base-style">
           <li class="team__card">
             <picture>
-              <source srcset="./images/comands_1_480.jpg 1x, ./images/comands_1_480@2x.jpg 2x" media="(min-width: 0; max-width: 767px)" />
-              <source srcset="./images/comands_1_780.jpg 1x, ./images/comands_1_780@2x.jpg 2x" media="(min-width: 768px; max-width: 1199px)"/>    
-              <source srcset="./images/comands_1_1200.jpg 1x, ./images/comands_1_1200@2x.jpg 2x" media="(min-width: 1200px; max-width:100vw)"/>
-              <img class="team__img" src="./images/comands_1_480.jpg" alt="comands_1" />
+              <source srcset="./images/comands_1200/comands_1_1200.jpg 1x, ./images/comands_1200_2x/comands_1_1200@2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./images/comands_768/comands_1_768.jpg 1x, ./images/comands_768_2x/comands_1_768@2x.jpg 2x" media="(min-width: 768px)"/>  
+              <source srcset="./images/comands_480/comands_1_480.jpg 1x, ./images/comands_480_2x/comands_1_480@2x.jpg 2x" media="(max-width: 767px)" />             
+              <img class="team__img" src="./images/comands_480/comands_1_480.jpg" alt="comands_1" />
             </picture>
             <div class="team__wrap">
               <h3 class="team__card-title">Ігор Дем'яненко</h3>
@@ -252,10 +261,10 @@
           </li>
           <li class="team__card">
             <picture>
-              <source srcset="./images/comands_2_480.jpg 1x, ./images/comands_2_480@2x.jpg 2x" media="(min-width: 0; max-width: 767px)" />
-              <source srcset="./images/comands_2_780.jpg 1x, ./images/comands_2_780@2x.jpg 2x" media="(min-width: 768px; max-width: 1199px)"/>    
-              <source srcset="./images/comands_2_1200.jpg 1x, ./images/comands_2_1200@2x.jpg 2x" media="(min-width: 1200px; max-width:100vw)"/>
-              <img class="team__img" src="./images/comands_2_480.jpg" alt="comands_2" />
+              <source srcset="./images/comands_1200/comands_2_1200.jpg 1x, ./images/comands_1200_2x/comands_2_1200@2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./images/comands_768/comands_2_768.jpg 1x, ./images/comands_768_2x/comands_2_768@2x.jpg 2x" media="(min-width: 768px)"/>  
+              <source srcset="./images/comands_480/comands_2_480.jpg 1x, ./images/comands_480_2x/comands_2_480@2x.jpg 2x" media="(max-width: 767px)" />             
+              <img class="team__img" src="./images/comands_480/comands_2_480.jpg" alt="comands_2" />
             </picture>
           
             <div class="team__wrap">
@@ -279,10 +288,10 @@
           </li>
           <li class="team__card">
             <picture>
-              <source srcset="./images/comands_3_480.jpg 1x, ./images/comands_3_480@2x.jpg 2x"  media="(min-width: 0; max-width: 767px)" />
-              <source srcset="./images/comands_3_780.jpg 1x, ./images/comands_3_780@2x.jpg 2x"  media="(min-width: 768px; max-width: 1199px)" />
-              <source srcset="./images/comands_3_1200.jpg 1x, ./images/comands_3_1200@2x.jpg 2x" media="(min-width: 1200px; max-width:100vw)"/>
-              <img class="team__img" src="./images/comands_3_480.jpg" alt="comands_3" />
+              <source srcset="./images/comands_1200/comands_3_1200.jpg 1x, ./images/comands_1200_2x/comands_3_1200@2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./images/comands_768/comands_3_768.jpg 1x, ./images/comands_768_2x/comands_3_768@2x.jpg 2x" media="(min-width: 768px)"/>  
+              <source srcset="./images/comands_480/comands_3_480.jpg 1x, ./images/comands_480_2x/comands_3_480@2x.jpg 2x" media="(max-width: 767px)" />             
+              <img class="team__img" src="./images/comands_480/comands_3_480.jpg" alt="comands_3" />
             </picture>
             <div class="team__wrap">
               <h3 class="team__card-title">Микола Тарасов</h3>
@@ -305,10 +314,10 @@
           </li>
           <li class="team__card">
             <picture>
-              <source srcset="./images/comands_4_480.jpg 1x, ./images/comands_4_480@2x.jpg 2x" media="(min-width: 0; max-width: 767px)" />
-              <source srcset="./images/comands_4_780.jpg 1x, ./images/comands_4_480@2x.jpg 2x" media="(min-width: 768px; max-width: 1199px)"/>    
-              <source srcset="./images/comands_4_1200.jpg 1x, ./images/comands_4_480@2x.jpg 2x" media="(min-width: 1200px; max-width:100vw)"/>
-              <img class="team__img" src="./images/comands_4_480.jpg" alt="comands_4" />
+              <source srcset="./images/comands_1200/comands_4_1200.jpg 1x, ./images/comands_1200_2x/comands_4_1200@2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./images/comands_768/comands_4_768.jpg 1x, ./images/comands_768_2x/comands_4_768@2x.jpg 2x" media="(min-width: 768px)"/>  
+              <source srcset="./images/comands_480/comands_4_480.jpg 1x, ./images/comands_480_2x/comands_4_480@2x.jpg 2x" media="(max-width: 767px)" />             
+              <img class="team__img" src="./images/comands_480/comands_4_480.jpg" alt="comands_4" />
             </picture>
             <div class="team__wrap">
               <h3 class="team__card-title">Михайло Єрмаков</h3>
